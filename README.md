@@ -1,0 +1,2 @@
+# HardSO
+web estático 
