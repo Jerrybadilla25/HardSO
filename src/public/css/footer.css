@@ -1,0 +1,25 @@
+.footer-logo{
+    color: whitesmoke;
+    letter-spacing: 8px;
+    font-size: 1em;
+}
+
+.footer-logo-1{
+    color: #00ff00;
+    font-size: 1.5em;
+    font-weight: 750;
+
+}
+
+.text-footer{
+    font-size: 0.8em;
+    color: whitesmoke;
+}
+
+.border-verde{
+    border-top: 3px solid #00ff00;
+}
+
+.footer{
+    margin-top: 20px; 
+}
