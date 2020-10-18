@@ -10,8 +10,8 @@ const https = require('https');
 
 
 https.createServer({
-    cert: fs.readFileSync('fullchain.pem'),
-    key: fs.readFileSync('privkey.pem')
+    cert: fs.readFileSync('/etc/letsencrypt/live/hardsof.com/fullchain.pem'),
+    key: fs.readFileSync('/etc/letsencrypt/live/hardsof.com/privkey.pem')
 },app).listen(app.get('port'), function(){
     console.log(`server on port ${app.get('port')}`);
 });
