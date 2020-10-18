@@ -35,8 +35,8 @@ body{
 .logo-recuadro{
     border-left: 3px solid #00ff00;
     border-right: 3px solid #00ff00;
-    padding-left: 230px;
-    padding-right: 230px;
+    padding-left: 200px;
+    padding-right: 200px;
     
 }
 
@@ -49,20 +49,20 @@ body{
 }
 
 .foto-respon{
-    width: 80%;
+    width: 90%;
     height: 40%;
 }
 
 .foto-respon-2{
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 
 .box-white{
     padding-bottom: 3%;
     padding-top: 3%;
-    margin-left: 10%;
-    width: 80%;
+    /*margin-left: 10%;*/
+    /*width: 80%;*/
     height: auto;
     background-color: rgb(126, 119, 119);
     color: rgb(253, 250, 250);
