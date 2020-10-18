@@ -9,6 +9,8 @@ body{
     margin-right: 20px;
 }
 
+
+
 .text-logo{
     color: whitesmoke;
     letter-spacing: 8px;
@@ -35,10 +37,12 @@ body{
 .logo-recuadro{
     border-left: 3px solid #00ff00;
     border-right: 3px solid #00ff00;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
     
 }
+
+
 
 
 
