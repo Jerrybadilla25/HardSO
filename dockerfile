@@ -10,6 +10,8 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 80
+VOLUME [ "/etc/letsencrypt/live/www.hardsof.com" ]
+
+EXPOSE 443
 
 CMD ["npm", "start"]
