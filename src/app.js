@@ -3,6 +3,18 @@ const app = express();
 const path = require('path');
 const morgan = require('morgan');
 require('dotenv').config();
+const fs = require('fs');
+const https = require('https');
+
+
+
+
+https.createServer({
+    cert: fs.readFileSync('/etc/letsencrypt/live/www.hardsof.com/fullchain.pem'),
+    key: fs.readFileSync('/etc/letsencrypt/live/www.hardsof.com/privkey.pem')
+},app).listen(app.get('port'), function(){
+    console.log(`server on port ${app.get('port')}`);
+});
 
 
 
@@ -26,6 +38,6 @@ app.use('/', indexRouter);
 
 
 
-app.listen(app.get('port'), function(){
+/*app.listen(app.get('port'), function(){
     console.log(`server on port ${app.get('port')}`);
-});
+});*/
