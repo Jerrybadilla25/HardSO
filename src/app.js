@@ -6,7 +6,7 @@ require('dotenv').config();
 const https = require('https');
 const fs = require('fs');
 
-
+/*
 const options = {
     key: fs.readFileSync(path.join(__dirname, 'cert','privkey.pem')),
     cert: fs.readFileSync(path.join(__dirname, 'cert','fullchain.pem'))
@@ -18,7 +18,7 @@ const options = {
     console.log(`server on port ${app.get('port')}`);
 });
 
-
+*/
 
 /*
 https.createServer({
@@ -49,8 +49,7 @@ app.use(express.urlencoded({extended:false}));
 app.use('/', indexRouter);
 
 
-/*
+
 app.listen(app.get('port'), function(){
     console.log(`server on port ${app.get('port')}`);
 });
-*/
