@@ -20,14 +20,7 @@ const options = {
 
 */
 
-/*
-https.createServer({
-    cert: fs.readFileSync(path.join(__dirname, 'cert','cert.pem')),
-    key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem'))
-},app).listen(app.get('port'), function(){
-    console.log(`server on port ${app.get('port')}`);
-});
-*/
+
 
 
 // setting
