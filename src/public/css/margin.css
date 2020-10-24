@@ -1,0 +1,11 @@
+.line-left-White{
+    border-left: 2px solid whitesmoke;
+}
+
+.line-left-black{
+    border-left: 2px solid black;
+}
+
+.line-left-green{
+    border-left: 2px solid #00ff00;
+}
