@@ -109,7 +109,7 @@ iframe{
     margin-top: 2%;
     padding: 2%;
     padding-bottom: 3%;
-    width: 95%;
+    width: 100%;
 
 }
 
@@ -154,8 +154,8 @@ div p {
 .h3-color-boton{
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-right: 30%;
-    margin-left: 30%;
+    margin-right: 15%;
+    margin-left: 15%;
     border-bottom: 3px solid #00ff00;
 
 }  
@@ -187,3 +187,4 @@ ul li{
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/app.js",
+    "imagemin": "imagemin imgs/* --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +26,11 @@
     "https": "^1.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "imagemin-cli": "^6.0.0"
   }
 }

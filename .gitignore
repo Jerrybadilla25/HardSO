@@ -1,4 +1,6 @@
 node_modules/
+dist
+imgs
 
 cert.pem
 fullchain.pem

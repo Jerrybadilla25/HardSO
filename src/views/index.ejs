@@ -8,12 +8,12 @@
     <meta name="author" content="Jerry Badilla Diaz" />
     <meta name="copyright" content="Jerry Badilla Diaz" />
     <title>Mi computadora está muy lenta</title>
-    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.min.css"  type="text/css">
+    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css"  type="text/css">
     <link rel="stylesheet" href="/css/pers.css" type="text/css">
     <link rel="stylesheet" href="/css/temabodydark.css" type="text/css">
     <link rel="stylesheet" href="/css/footer.css" type="text/css">
     <link rel="stylesheet" href="/css/margin.css" type="text/css">
-    <link  rel="icon"   href="/img/favicon.png" type="image/png" />
+    <link  rel="icon"   href="/img2/favicon.png" type="image/png" />
 </head>
 
 <%- include('partials/main') %>
@@ -29,11 +29,11 @@
         <div class="col-md-9 col-sm-12">
             <h1 class="text-title-ligth mt-5 text-center">¡Mi computadora está muy lenta!</h1>
             <div class="mt-4">
-                <img src="/img/hdd-3.jpg" alt="HDD" class="rounded mx-auto d-block foto-respon">
+                <img src="/img/hdd/hdd-3.jpg" alt="HDD" class="rounded mx-auto d-block foto-respon">
             </div>
 
             <div class="h3-color-boton">
-                <h3 class=" text-subtitilo-ligth">Discos Duros</h3>
+                <h3 class=" text-subtitilo-ligth text-center">Discos Duros</h3>
             </div>
             <div class="box-gray ">
 
@@ -118,7 +118,7 @@
                     tecnicos, como la salud, ect.</p>
             </div>
             <div class="mt-4">
-                <img src="img/foto-1.jpg" alt="HDD" class="rounded mx-auto d-block foto-respon-2">
+                <img src="img/hdd/foto-1.jpg" alt="HDD" class="rounded mx-auto d-block foto-respon-2">
             </div>
 
 
@@ -138,7 +138,7 @@
             <div class="row ">
                 <div class="col-md-4 col-sm-12">
                     <div class="card mr-3 mt-3 " style="width: 100%;">
-                        <img src="/img/sata.png" class="card-img-top" alt="...">
+                        <img src="/img/hdd/sata.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Los SATA, son los conectores tradicionales y su conector se miran de la
                                 siguiente forma, su taza de transferencia ronda los 6Gb/s. <br>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="card mr-3 mt-3" style="width: 100%;">
-                        <img src="/img/evo.png" class="card-img-top" alt="...">
+                        <img src="/img/hdd/evo.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Los SSD M.2 han venido a solucionar el problema del tamaño y además
                                 están desplazando al disco de estado sólido tradicional por sus mayores prestaciones y
@@ -161,7 +161,7 @@
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="card mr-3 mt-3" style="width: 100%;">
-                        <img src="/img/ssd-pci-wd.png" class="card-img-top" alt="...">
+                        <img src="/img/hdd/ssd-pci-wd.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">También tenemos los PCIe, estos se conectan al puerto pci express y son
                                 la opción con mayores rangos de velocidad superando en gran medida a los SATA, no
@@ -198,16 +198,7 @@
 
         <!--texto lateral derecho-->
         <div class="col-md-2 col-sm-12">
-           <h5 class="text-subtitilo-ligth text-center mt-5">Temas de interes</h5>
-           <div class="mt-4 line-left-White pl-2">
-            
-                <div>
-                    <img src="/img/mapsme/mountain-gps.jpg" class="foto-respon-menu" alt="mountain-gps">
-                    <p class="text-subtitilo-ligth text-center"><a href="/mobil/sofware/mapme">Mapas GPS sin conexion</a> </p>
-                </div>
-            
-            
-           </div>
+            <%- include('partials/lateralDerecho') %>
         </div>
 
 
