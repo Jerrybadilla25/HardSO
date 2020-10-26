@@ -188,3 +188,10 @@ ul li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.float-r{
+    float: right;
+}
+
+.ml-10{
+    margin-right: 6%;
+}

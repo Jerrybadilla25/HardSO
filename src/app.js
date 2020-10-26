@@ -3,23 +3,8 @@ const app = express();
 const path = require('path');
 const morgan = require('morgan');
 require('dotenv').config();
-const https = require('https');
-const fs = require('fs');
-
-/*
-const options = {
-    key: fs.readFileSync(path.join(__dirname, 'cert','privkey.pem')),
-    cert: fs.readFileSync(path.join(__dirname, 'cert','fullchain.pem'))
-};
-
-
-
-  https.createServer(options,app).listen(app.get('port'), function(){
-    console.log(`server on port ${app.get('port')}`);
-});
-
-*/
-
+//const https = require('https');
+//const fs = require('fs');
 
 
 
@@ -28,6 +13,7 @@ app.set('port', process.env.PORT || 4200);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
+//app.use(robots(__dirname + '/robots.txt'));
 
 //importando rutas
 const indexRouter = require('./routes/routes');
