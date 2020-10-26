@@ -158,7 +158,15 @@ div p {
     margin-left: 15%;
     border-bottom: 3px solid #00ff00;
 
-}  
+}
+
+.border-butom{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 1%;
+    margin-left: 1%;
+    border-bottom: 3px solid #00ff00;
+}
 
 .foto-min{
     float: right;

@@ -3,7 +3,8 @@ User-Agent: *
 Disallow:
 
 Allow: /
-
 Allow: /mobil/sofware/mapme
+Allow: /mobil/hardware/smartGM
+Allow: /hardware/ssd
 
 Disallow: /politica/politica
