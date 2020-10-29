@@ -37,6 +37,7 @@
     border-right: 3px solid #00ff00;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 5%;
     
 }
 
@@ -203,3 +204,10 @@ ul li{
 .ml-10{
     margin-right: 6%;
 }
+
+.box-fb{
+    background-color: rgb(207, 199, 199);
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
