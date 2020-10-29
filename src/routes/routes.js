@@ -7,17 +7,13 @@ const fs = require('fs');
 //sitemaps
 router.get('/sitemap.xml', function(req, res){
     const sitemap = fs.readFileSync('./src/sitemap.xml').toString('utf8');
-    console.log(sitemap);
     res.header('Content-Type', 'application/xml');
-    res.header('Content-Encoding', 'gzip');
     res.send(sitemap)
 });
 
 //robots
 router.get('/robots.txt', function(req, res){
     const robots = fs.readFileSync('./src/robots.txt').toString('utf8');
-    console.log(robots);
-   
     res.send(robots)
 });
 
