@@ -1,25 +1,34 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+  }
+
+
 .l-red{
-    font-family: 'Itim', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(235, 61, 61);
 }
 
 .l-black{
-    font-family: 'Itim', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(10, 10, 10);
 }
 
 .l-white{
-    font-family: 'Itim', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(252, 252, 252);
 }
 
 .l-green{
-    font-family: 'Itim', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(48, 168, 24);
 }
 
 .l-red{
-    font-family: 'Itim', cursive;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(235, 61, 61);
 }
 
