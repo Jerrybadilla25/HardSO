@@ -241,3 +241,10 @@ ul li{
 -moz-box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
  box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
 }
+
+@media only screen and (max-width: 800px){
+    .mx-centro{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}

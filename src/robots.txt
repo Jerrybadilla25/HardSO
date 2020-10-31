@@ -6,5 +6,6 @@ Allow: /
 Allow: /mobil/sofware/mapme
 Allow: /mobil/hardware/smartGM
 Allow: /hardware/ssd
+Allow: /hardware/ram
 
 Disallow: /politica/politica
