@@ -44,6 +44,10 @@ router.get('/hardware/ssd', function(req, res){
     res.render('hardware/ssd')
 });
 
+router.get('/hardware/ram', function(req, res){
+    res.render('hardware/ram')
+});
+
 
 
 //rutas varias

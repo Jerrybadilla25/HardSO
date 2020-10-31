@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header') %>
+    
+    <meta name="keywords" content="ram, memoria ram, memoria acceso volatil, cambio memoria ram, tipos memoria ram" />
+    <meta name="description" content="Memoria ram" />
+    <title>gestion de la memoria</title>
+
+    <!--facebook-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0&appId=369303940902742&autoLogAppEvents=1" nonce="CfC5DtWh"></script>
+    <%- include('../partials/pixel') %>
+    </head>
+
+<%- include('../partials/main') %>
+<%- include('../partials/logo') %>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--texto lateral izquierdo-->
+            <div class="col-sm-12 col-md-2"></div>
+
+            <!--texto central-->
+            <div class="col-sm-12 col-md-8">
+                <h1 class="l-black mt-5 text-center">Gestion de la memoria </h1>
+                <div class="mt-4">
+                    <img src="/img/ram/ram.jpg" alt="memoria ram" class="rounded mx-auto d-block foto-respon">
+                </div>
+
+                <div class="h3-color-boton">
+                    <h4 class="text-center l-black">Memoria ram</h4>
+                </div>
+
+                <div class="box-white">
+                    <p>
+                        <strong>La memoria ram</strong>  es ese componente que muchos de nosotros no conocemos, pero es de suma importancia para los dispositivos tanto computadoras como teléfonos inteligentes, <em>ya que por ella pasa todas las instrucciones y datos necesarios para que  funcione nuestro dispositivo</em> , hemos visto como en los últimos años este numero ha aumentado en capacidad, para satisfacer las necesidades de los usuarios, ya que entre más memoria ram, más rápido se vuelve nuestro dispositivo.
+                    </p>
+                    <p>
+                        El significado de  RAM es <strong>“memoria de acceso aleatorio”</strong>  su principal distribución es en forma de chip rectangulares donde internamente se encuentran los circuitos que componen la memoria.  La memoria se media inicialmente  en Kilobytes, pero con el paso del tiempo ese dato ha venido variando; pasando por megabyte hasta llegar a nuestros tiempos donde lo medimos y empaquetamos en módulos de gigabytes, muy posiblemente dentro de un par de años miremos módulos de terabytes, pero para eso hace falta un tiempo ya que la ram depende de la capacidad del procesador para direccionarla.
+                    </p>
+
+                    <p>
+                        La memoria RAM se inserta en la placa base y se comunica con diversos elementos del sistema. Su función principal es almacenar datos e instrucciones para que puedan ser accedidos por otros componentes, de manera que evita que tengan que volver a pasar por el procesador o incluso por la tarjeta gráfica (como se muestra en la figura 1).
+                    </p>
+
+                     <small class="text-muted"><h6 class="text-center">Figura 1</h6></small>
+
+                    <div class="mt-4">
+                        <img src="/img/ram/tarjeta-men.jpg" alt="memoria ram tarjeta madre" class="rounded mx-auto d-block foto-respon-40">
+                    </div>
+
+                </div>
+
+                <%- include('../add/ram-hori') %>  
+
+                <div class="box-white">
+                    <h3 class="l-black my-5 text-center">Funcionamiento </h3>
+                    <p>
+                        Cuando un proceso corre, 
+                        éste necesita tiempo de CPU, pero también necesita memoria. 
+                        Cuando los procesos corren, 
+                        tienen que tomar más espacio en la memoria, 
+                        de tal forma que la computadora los pueda leer y cargar rápidamente. 
+                        Sin embargo, comparado con nuestros discos duros, 
+                        la memoria llega en cantidades pequeñas. 
+                        Así que, para obtener más memoria como la que hay físicamente, 
+                        usamos algo llamado memoria virtual. 
+                        La memoria virtual es una combinación de 
+                        espacio de disco duro y RAM que actúan como memoria para que nuestros procesos la puedan usar. 
+
+                    </p>
+
+                    <p>
+                        Cuando ejecutamos un proceso, 
+                        tomamos los datos del programa en pedazos llamados páginas. 
+                        almacenamos estas páginas en la memoria virtual. 
+                        Si queremos leer y ejecutar estas páginas, 
+                        éstas tienen que ser enviadas a la memoria física o a la RAM. 
+                        
+                        No usamos todas las características de nuestra aplicación de una vez. 
+                        Así que ¿Por qué cargar todo de una vez? 
+                        Esto es parecido como cuando cocinamos una receta de un libro de cocina. 
+                        No necesitas leer todo el libro sólo para preparar una receta. 
+                        Sólo necesitas leer las páginas de la receta que estas preparando. 
+                        Cuando almacenamos la memoria virtual en el disco duro, 
+                        llamamos al espacio asignado, espacio de intercambio (swap space). 
+                        Cuando nos metemos en aplicaciones prácticas de partición de disco, 
+                        también asignaremos el espacio para intercambio. 
+                        El kernel toma cuidado de todo esto por nosotros, absolutamente. 
+                        Éste maneja el proceso de toma de página de 
+                        datos y los intercambia entre la RAM y la memoria virtual. 
+                        Pero, el kernel no hace todo el trabajo acerca de esto (ver figura 2).
+
+                    </p>
+
+                    <small class="text-muted"><h6 class="text-center">Figura 2</h6></small>
+
+                    <div class="mt-4">
+                        <img src="/img/ram/gestion memoria.jpg" alt="diagrama gestion memoria ram" class="rounded mx-auto d-block foto-respon-80">
+                    </div>
+                </div>
+
+                <div class="box-white">
+                    <h3 class="l-black my-5 text-center">Tipos de memoria ram (módulos) </h3>
+                    <p>
+                        Las memorias se fabrican para diversos tipos de dispositivos y varían en forma, mas no en función, en este punto es bueno saber que tipo de dispositivo tenemos para comprar el correcto.
+                    </p>
+
+                    <div class="mx-centro my-5 border-red sombra">
+                        <p>
+                            <h5 class="text-center my-5 l-red">Tecnologías viejas:</h5>
+                       
+                        <ul >
+                            <li> <strong>RIMM:</strong>  estos módulos usaban memorias RDRAM, cuentan con 184 pines y bus de 16 bits.</li>
+                            <li> <strong>SIMM:</strong>  estos utilizaban módulos de 184 pines y tenían un bus de 16 bit.</li>
+                        </ul>
+                        <h5 class="text-center my-5 l-red">Tecnologías actual:</h5>
+                        <ul>
+                            <li> <strong>DIMM:</strong>  Es el modulo usado actualmente por las computadoras modernas, llamado también DDR y sus diferentes evoluciones DDR1, DDR2, DDR3 Y DDR4. Estas cuentan con un bus de datos de 64 bits y 184 pines para las DDR y 240 pines para las demás.</li>
+                            <li> <strong>SO-DIMM:</strong>  Tiene todas las características de formato DIMM solo que son exclusivas para las computadoras portátiles.</li>
+                        </ul>
+                        </p>
+                    </div>
+                    
+                    
+                    <p class="mb-5">
+                        Cabe resaltar que las memorias se venden con capacidades ya determinadas y bien definidas, estas pueden ser de 1GB que es la capacidad   mínima hoy en día y difícil de conseguir, módulos de 2GB, 4GB, 8GB, 16GB, 32GB, etc. <br><br><br>
+                        Es muy importante conocer que tipo de trabajo vamos a realizar en nuestra computadora para instalar la cantidad de memoria necesaria y no tener malas experiencias por falta de conocimiento
+
+                    </p>
+                    <p>
+                        
+                        <div class="mx-centro border-red sombra">
+                            <h5 class="text-center my-5 l-black">Detallo algunos ejemplos de cantidad de ram, necesaria para ciertas tareas.</h5>
+                            <ul>
+                                <li>Trabajo básico en Word, navegación por Internet y contenidos multimedia sencillos:  2 GB de RAM.</li>
+                                <li>Trabajo con documentos complejos, navegación web con varias pestañas, contenidos multimedia y multitarea moderada: debemos contar al menos con 4 GB de RAM.</li>
+                                <li>Trabajo con cualquier tipo de documentos, navegación web con varias pestañas abiertas, juegos, contenidos multimedia, multitarea alta y programas de diseño:  es necesario contar con 8 GB de RAM como mínimo</li>
+                                <li>Trabajo con aplicaciones intensivas juegos muy exigentes, diseño gráfico, edición de video: es recomendable contar con 16 GB de RAM.</li>
+                            </ul>
+                        </div>
+                        
+                    </p>
+
+                    <p class="mt-5">Este tema es muy amplio, todavia se puede investigar un poco mas, sobre todo factores tecnicos que final no vienen al caso, pero si te interesa te dejo este link para que investigues mas <a href="https://es.wikipedia.org/wiki/Memoria_de_acceso_aleatorio#:~:text=La%20memoria%20de%20acceso%20aleatorio,la%20mayor%20parte%20del%20software." target="_blank" rel="noopener">wikipedia</a></p>
+
+                    <%- include('../add/ssd-hori') %>  
+
+                    <div class="box-fb mt-5">
+                        <h5 class="text-center l-green">Dejanos tus comentarios</h5>
+                        <div class="fb-comments" data-href="https://www.hardsof.com/hardware/ram" data-numposts="5" data-width="100%"></div>
+                    </div>
+
+                    <div class="my-5">
+                        <h5 class="text-center">Fuentes</h5>
+                        <h6 class="text-center">Algunas imagenes que se presentan en esta pagina son descargadas del sitio: <a href="https://pixabay.com/es/" target="_blank" rel="noopener">Pixabay.com</a>  </h6>
+                    </div>
+                   
+
+
+
+
+                </div>
+
+            </div>
+
+                
+
+
+
+
+
+
+        <!--texto lateral derecho-->
+        <div class="col-sm-12 col-md-2"></div>
+    </div>
+</div>
+
+
+
+
+
+
+<%- include('../partials/footer') %>

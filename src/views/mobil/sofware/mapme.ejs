@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script data-ad-client="pub-9395835233294925" async src="https://pagead2.googlesyndication.com/
-    pagead/js/adsbygoogle.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="GPS, sin internet, ciclismo gps"/>
+    <%- include('../../partials/header') %>
+    <meta name="keywords" content="GPS, mapa sin internet, ciclismo gps, mapa bicicleta sin cobertura"/>
     <meta name="description" content="Mapas con GPS sin coneccion"/>
-    <meta name="author" content="Jerry Badilla Diaz" />
-    <meta name="copyright" content="Jerry Badilla Diaz" />
     <title>mapas sin conexión</title>
-    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css"  type="text/css">
-    <link rel="stylesheet" href="/css/pers.css" type="text/css">
-    <link rel="stylesheet" href="/css/footer.css" type="text/css">
-    <link  rel="icon"   href="/img2/favicon.png" type="image/png" />
+    
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v8.0&appId=369303940902742&autoLogAppEvents=1" nonce="53J1kgyk"></script>
     <%- include('../../partials/pixel') %>
@@ -34,13 +26,13 @@
         <!--texto centarl-->
         <div class="col-md-8 col-sm-12">
 
-        <h1 class="text-title-dark mt-5 text-center">Mapas GPS sin conexión </h1>
+        <h1 class="l-black mt-5 text-center">Mapas GPS sin conexión </h1>
         <div class="mt-4">
             <img src="/img/mapsme/mountain-gps.jpg" alt="GPS" class="rounded mx-auto d-block foto-respon">
         </div>
 
         <div class="h3-color-boton">
-            <h4 class="text-center text-subtitilo-dark">Te imaginas salir con tu bici y usar tu tefefono celular como GPS sin conexión</h4>
+            <h4 class="text-center l-black">Te imaginas salir con tu bici y usar tu tefefono celular como GPS sin conexión</h4>
         </div>
 
         <div class="box-white">
@@ -56,7 +48,7 @@
                 Cuantas veces hemos descargado aplicaciones de seguimiento gps y después de probarla terminamos desinstalándola porque no funciona o simplemente esta cargada de anuncios molestos he invasivos.
             </p>
         </div>
-            <h4 class="text-center mt-3 h3-color-boton">Proceso de instalacion</h4>
+            <h4 class="text-center mt-3 h3-color-boton l-black">Proceso de instalacion</h4>
         <div class="box-white">
             <p>
                 Lo primero que tenemos que hacer es descargar dicha aplicación, te dejo el <a href="https://play.google.com/store/apps/details?id=com.mapswithme.maps.pro&hl=en&gl=US" target="_blank" rel="noopener">link para la descarga directa de la tienda de Play Store</a>     y procedemos a la instalación, luego iniciamos el app y aceptamos la política de privacidad y los términos de uso.
@@ -79,7 +71,7 @@
                 Cuando queremos iniciar un viaje, tan solo tenemos que mantener pulsado el dedo sobre la pantalla en el punto donde queremos iniciar el viaje he inmediatamente se activa un submenú
             </p>
             <div >
-                <img src="/img/mapsme/submenu.png" alt="" class="rounded mx-auto d-block  foto-respon-min">
+                <img src="/img/mapsme/submenu.png" alt="" class="rounded mx-auto d-block  foto-respon-80">
             </div>
 
             <div class="d-flex justify-content-center">
@@ -90,8 +82,10 @@
             
         </div>
 
+        <%- include('../../add/cel-hori') %>
+
         <div class="box-white">
-            <p class="text-center">
+            <p class="text-center l-black">
                 Aquí tenemos dos opciones
             </p>
             <p>
@@ -113,8 +107,12 @@
             </p>
         </div>
 
-        <div class="box-white">
-            <h5 class="text-center">Te dejo algunas capturas de la aplicacion para que te animes.</h5>
+        <%- include('../../add/ssd-hori') %>
+
+
+
+        <div class="box-white ">
+            <h5 class="text-center l-black">Te dejo algunas capturas de la aplicacion para que te animes.</h5>
 
             <div class="d-flex justify-content-center">
                 <img src="/img/mapsme/map3.jpg" class="foto-respon-item" alt="maps instalacion">
@@ -134,10 +132,10 @@
 
         </div>
 
-        
+        <%- include('../../add/ssd2-hori') %>        
 
         <div class="box-fb mt-5">
-            <h5 class="text-center">Dejanos tus comentarios</h5>
+            <h5 class="text-center l-green">Dejanos tus comentarios</h5>
             <div class="fb-comments" data-href="https://www.hardsof.com/mobil/sofware/mapme" data-numposts="5" data-width="100%"></div>
         </div>
 

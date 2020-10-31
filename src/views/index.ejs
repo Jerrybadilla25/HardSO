@@ -2,19 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include('partials/header') %>
+   
 
     <meta name="description" content="temas varios, tecnologia, software, hardware" />
     <meta name="author" content="Jerry Badilla Diaz" />
     <meta name="copyright" content="Jerry Badilla Diaz" />
     <title>Inicio hardsof</title>
-    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="/css/pers.css" type="text/css">
-    <link rel="stylesheet" href="/css/temabodydark.css" type="text/css">
-    <link rel="stylesheet" href="/css/footer.css" type="text/css">
-    <link rel="stylesheet" href="/css/margin.css" type="text/css">
-    <link rel="icon" href="/img2/favicon.png" type="image/png" />
+ 
     <%- include('partials/pixel') %>
 </head>
 
@@ -40,21 +35,21 @@
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h4 class="card-title text-center">Mapas GPS sin conexión</h4>
+                          <h4 class="card-title text-center"></h4>
                           <p class="card-text">Eres de las personas amantes de los <em>deportes con seguimientos
                             GPS</em> , pero te estresas cuando te quedas sin conexión a internet o estas en una zona sin
                         cobertura celular. No te preocupes ya que existen muchas soluciones para ti. En este articulo te
                         comentare sobre una, que para mi es una de las mejores, ya que cumple con lo que dice, es gratis
                         y la cantidad de anuncios es muy tolerable ya que no nos damos cuenta de los mismos. (muy
                         limpia).</p>
-                          <p class="card-text"><small class="text-muted"><a href="/mobil/hardware/smartGM"> Segir leyendo... </a></small></p>
+                          <p class="card-text"><small class="text-muted"><a href="/mobil/sofware/mapme"> Segir leyendo... </a></small></p>
                         </div>
                       </div>
                     </div>
                   </div>
             </div>
 
-
+            
              <!--recuadro pagina principal 2-->
              <div class="my-5">
                 <div class="card mb-6 mx-auto" style="max-width: 100%;">
@@ -70,7 +65,7 @@
                             al fin y al cabo todo ese potencial no se aprovecha como debe ser, por lo general usamos nuestro
                             teléfono para tareas básicas como llamar, enviar msj por las aplicaciones ya conocidas, eje:
                             WhatsApp, mirar Facebook y tomar fotografías. Y eso lo hace cualquier teléfono en la actualidad.</p>
-                          <p class="card-text"><small class="text-muted"><a href="/mobil/sofware/mapme"> Segir leyendo... </a></small></p>
+                          <p class="card-text"><small class="text-muted"><a href="/mobil/hardware/smartGM"> Segir leyendo... </a></small></p>
                         </div>
                       </div>
                     </div>
@@ -98,6 +93,23 @@
                     </div>
                   </div>
             </div>
+
+            <div class="my-5">
+              <div class="card mb-6 mx-auto" style="max-width: 100%;">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="/img/ram/ram.jpg" class="card-img" alt="SSD">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h4 class="card-title text-center"></h4>
+                        <p class="card-text">La memoria ram es ese componente que mucho de nosotros no conocemos, pero es de suma importancia para los dispositivos tanto computadoras como teléfonos celulares ya que por ella pasa todas las instrucciones y datos necesarios para que  funcione nuestro dispositivo, hemos visto como en los últimos años este numero ha aumentado en capacidad, para satisfacer las necesidades de los usuarios, ya que entre más memoria ram, más rápido se vuelve nuestro dispositivo.</p>
+                        <p class="card-text"><small class="text-muted"><a href="/hardware/ram"> Segir leyendo... </a></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
 
            
 
@@ -131,48 +143,3 @@
 <%- include('partials/footer') %>
 
 
-  <!--contenido 1
-  <div class="row border-butom ">
-    <div class="col-sm-12 col-md-6">
-        <img src="/img/mapsme/mountain-gps.jpg" alt="GPS"
-            class="rounded mx-auto d-block foto-respon-home mb-3">
-    </div>
-    <div class="col-sm-12 col-md-6">
-        <p class="text-home py-auto"> Eres de las personas amantes de los <em>deportes con seguimientos
-                GPS</em> , pero te estresas cuando te quedas sin conexión a internet o estas en una zona sin
-            cobertura celular. No te preocupes ya que existen muchas soluciones para ti. En este articulo te
-            comentare sobre una, que para mi es una de las mejores, ya que cumple con lo que dice, es gratis
-            y la cantidad de anuncios es muy tolerable ya que no nos damos cuenta de los mismos. (muy
-            limpia). <br> <a href="/mobil/sofware/mapme"> Segir leyendo... </a> </p>
-    </div>
-</div>
-
-contenido 
-<div class="row border-butom">
-    <div class="col-sm-12 col-md-6">
-        <img src="/img/smartgm/mobile-1.jpg" alt="SSD"
-            class="rounded mx-auto d-block foto-respon-home mb-3">
-    </div>
-    <div class="col-sm-12 col-md-6">
-        <p class="text-home"> Los teléfonos de gama media son siempre una opción para muchas de las
-            personas, ya sea porque no pueden o no quieren pagar caprichos por un teléfono de gama alta, que
-            al fin y al cabo todo ese potencial no se aprovecha como debe ser, por lo general usamos nuestro
-            teléfono para tareas básicas como llamar, enviar msj por las aplicaciones ya conocidas, eje:
-            WhatsApp, mirar Facebook y tomar fotografías. Y eso lo hace cualquier teléfono en la actualidad.
-            <br> <a href="/mobil/hardware/smartGM"> Segir leyendo... </a> </p>
-    </div>
-</div>
-
-contenido 
-<div class="row border-butom ">
-    <div class="col-sm-12 col-md-6">
-        <img src="/img/hdd/hdd-3.jpg" alt="GPS" class="rounded mx-auto d-block foto-respon-home mb-3">
-    </div>
-    <div class="col-sm-12 col-md-6">
-        <p class="text-home"> Uno de los principales problemas que tienen los computadores, tanto laptops
-            como Desktop es la
-            velocidad de acceso al disco duro; dicha velocidad es muy importante a la hora de acceder a
-            documentos como programas, siendo esta una de las principales causas de lentitud de las
-            computadoras. <br> <a href="/hardware/ssd"> Segir leyendo... </a> </p>
-    </div>
-</div>-->

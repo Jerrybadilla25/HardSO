@@ -54,6 +54,8 @@ em{
     
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
     
 }
 
@@ -90,8 +92,14 @@ iframe{
     margin: auto;
 }
 
-.foto-respon-min{
-    width: 50%;
+.foto-respon-40{
+    width: 40%;
+    height: auto;
+    
+}
+
+.foto-respon-80{
+    width: 80%;
     height: auto;
     
 }
@@ -211,3 +219,25 @@ ul li{
     padding-left: 1%;
 }
 
+.mx-centro{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.border-red{
+    border: 1px solid rgb(230, 137, 137);
+}
+
+.border-white{
+    border: 1px solid rgb(247, 247, 247);
+}
+
+.border-black{
+    border: 1px solid rgb(14, 13, 13);
+}
+
+.sombra{
+-webkit-box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
+ box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
+}
