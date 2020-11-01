@@ -45,9 +45,6 @@ strong{
     color: #202028;
 }
 
-em{
-    color:#0040ff ;
-}
 
 .box-anu{
     
@@ -64,25 +61,7 @@ iframe{
     margin-right: 15px;
 }
 
-.text-title-ligth{
-    color: whitesmoke;
-    font-size: 2em;
-}
 
-.text-title-dark{
-    color: rgb(10, 10, 10);
-    font-size: em;
-}
-
-.text-subtitilo-ligth{
-    color: white;
-    
-}
-
-.text-subtitilo-dark{
-    color: rgb(10, 10, 10);
-    
-}
 
 
 

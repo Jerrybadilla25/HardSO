@@ -3360,11 +3360,12 @@ input[type="button"].btn-block {
   vertical-align: 0;
 }
 
+/*
 .dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {
   right: auto;
   bottom: auto;
 }
-
+*/
 .dropdown-divider {
   height: 0;
   margin: 0.5rem 0;
