@@ -1,18 +1,108 @@
 
-<div class="container-fluid footer">
-    <div class="row title-logo">
-            <div class="mx-auto my-auto">
-                <div class="">
-                    <h3 class="footer-logo lineal">HARD</h3>
-                   <h1 class="footer-logo-1 lineal">SOF</h1>
-                </div>
-                <div class="border-verde">
-                    <h3 class="text-footer">Derechos reservados</h3>
-                   
-                </div>
-            </div>
+
+
+
+
+  <div class="row footer-black border-t-white pb-0 ">
+
+    <div class="col-sm-4 ">
+        <!-- Button trigger modal -->
+        <div class="d-flex justify-content-end pt-5">
+            <button type="button" class="btn text-white btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+                Contacto
+              </button>
+        </div>
     </div>
+
+
+
+
+
+    <div class="col-sm-4 ">
+        <div class="container-fluid footer px-0 ">
+            <div class="row title-logo px-0">
+                    <div class="mx-auto my-auto px-0">
+                        <div class="">
+                            <h3 class="footer-logo lineal">HARD</h3>
+                           <h1 class="footer-logo-1 lineal">SOF</h1>
+                        </div>
+                        <div class="border-verde">
+                            <h3 class="text-footer">Derechos reservados</h3>
+                           
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="col-sm-4">
+
+    </div>
+
+
+
+
 </div>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<!-- Modal  -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Contacto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form action="/contacto" method="POST">
+            <div class="form-group">
+              <label for="name">Tu nombre</label>
+              <input type="text" class="form-control" name="name">
+              <small id="emailHelp" class="form-text text-muted">Tus datos no se estan registrando, son temporales en esta pagina</small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+                <label for="text">Sugerencia</label>
+                <textarea name="text" id="" cols="62" rows="5"></textarea>
+            </div>    
+              
+          
+            <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+          </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 

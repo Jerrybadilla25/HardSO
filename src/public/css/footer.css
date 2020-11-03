@@ -16,6 +16,10 @@
     color: whitesmoke;
 }
 
+.footer-black{
+  background-color: #04021F;
+}
+
 .border-verde{
     border-top: 3px solid #00ff00;
 }
@@ -51,4 +55,15 @@
 }
 
 
+.px-0{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.logo-bkg-black{
+  background-color: #1D0136;
+  height: 150px;
   
+}
+
+

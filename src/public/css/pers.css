@@ -2,10 +2,11 @@
 
 .title-logo{
     height: 100px;
-    background-color: #1a1a00;
     margin-left: 20px;
     margin-right: 20px;
 }
+
+
 
 
 
@@ -231,11 +232,21 @@ ul li{
     border: 1px solid rgb(14, 13, 13);
 }
 
+.border-b-white{
+    border-bottom: 1.5px solid #5e4472;
+}
+
+.border-t-white{
+    border-top: 7px solid #5e4472;
+}
+
 .sombra{
 -webkit-box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
  box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
 }
+
+
 
 @media only screen and (max-width: 800px){
     .mx-centro{

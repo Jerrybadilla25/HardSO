@@ -1,11 +1,6 @@
-User-Agent: *
+User-agent: * 
+Disallow: /politica/ 
+Allow: / 
+Sitemap: https://hardsof.com/sitemap.xml 
 
-Disallow:
 
-Allow: /
-Allow: /mobil/sofware/mapme
-Allow: /mobil/hardware/smartGM
-Allow: /hardware/ssd
-Allow: /hardware/ram
-
-Disallow: /politica/politica

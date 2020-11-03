@@ -1,6 +1,42 @@
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
+const nodemailer = require('nodemailer');
+require('dotenv').config();
+
+// nodemailer
+router.post('/contacto', (req, res)=>{
+    const transporter = nodemailer.createTransport({
+        host: 'mail.hardsof.com',
+        port: 465,
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASS,
+        },
+
+    });
+   
+    const mailOptions = {
+        from: process.env.FROM,
+        to: process.env.TOUSER,
+        subject: req.body.email,
+        text: req.body.text,
+    };
+   
+    transporter.sendMail(mailOptions, (error, info)=>{
+        if(error){
+            res.status(500).send(error.message);
+        } else {
+            console.log("email enviado");
+            res.render('index');
+        }
+
+    });
+
+});
+
+
+
 
 
 
@@ -14,6 +50,7 @@ router.get('/sitemap.xml', function(req, res){
 //robots
 router.get('/robots.txt', function(req, res){
     const robots = fs.readFileSync('./src/robots.txt').toString('utf8');
+    res.header('Content-Type', 'application/txt');
     res.send(robots)
 });
 
@@ -21,7 +58,7 @@ router.get('/robots.txt', function(req, res){
 
 //rutas mobil
 router.get('/', function(req, res){
-    res.render('index')
+    res.render('index');
 });
 
 router.get('/mobil/sofware/mapme', function(req, res){
