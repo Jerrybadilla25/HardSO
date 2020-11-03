@@ -5,7 +5,23 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 // nodemailer
+router.get('/contacto', (req, res)=>{
+    res.render('partials/contact')
+});
+
+
 router.post('/contacto', (req, res)=>{
+    const { name, email, titulo, text} = req.body;
+    contentHTML = `
+        <h1>Informacion de usuario</h1>
+        <ul>
+           <li>username: ${name}</li>
+           <li>User Email: ${email}</li>
+           <li>Titulo: ${titulo}</li>
+        </ul>
+        <p>${text}</p>
+    `;
+
     const transporter = nodemailer.createTransport({
         host: 'mail.hardsof.com',
         port: 465,
@@ -19,8 +35,8 @@ router.post('/contacto', (req, res)=>{
     const mailOptions = {
         from: process.env.FROM,
         to: process.env.TOUSER,
-        subject: req.body.email,
-        text: req.body.text,
+        subject: titulo,
+        html: contentHTML,
     };
    
     transporter.sendMail(mailOptions, (error, info)=>{
@@ -28,7 +44,7 @@ router.post('/contacto', (req, res)=>{
             res.status(500).send(error.message);
         } else {
             console.log("email enviado");
-            res.render('index');
+            res.redirect('/');
         }
 
     });

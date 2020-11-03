@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('header') %>  
+    <link rel="stylesheet" href="/css/temabodydark.css" type="text/css"> 
+</head>
+<%- include('main') %>
+<%- include('logo') %>
+
+
+
+<div class="row justify-content-lg-center  mb-5 mt-5" style="height: 500px;">
+
+    <!--formulario-->        
+    <div class="col-md-4 col-sm-10 mx-auto mt-5 ">
+        <div class="card">
+        <div class="card-body">
+            <form action="/contacto" method="POST">
+                <div class="form-group">
+                    <label for="name">Tu nombre</label>
+                    <input type="text" name="name" placeholder="ingrese su nombre" class="form-control" > 
+                    <small id="emailHelp" class="form-text text-muted">Tus datos no se estan registrando, son temporales en esta pagina</small>
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="email" name="email" placeholder="ingrese su direccion de correo" class="form-control" > 
+                </div>
+                <div class="form-group">
+                    <label for="name">Sugerencia</label>
+                    <input type="text" name="titulo" placeholder="Titulo" class="form-control" > 
+                </div>
+                <div class="form-group">
+                    <label for="name">Comentario</label>
+                   <textarea name="text" cols="30"  class="form-control"  ></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary btn-block">Enviar Correo</button>
+            </form>
+        </div>
+       </div>
+    </div>
+
+
+</div>
+
+
+
+<%- include('footer') %>
