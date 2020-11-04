@@ -4,6 +4,8 @@ const fs = require('fs');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
+
+
 // nodemailer
 router.get('/contacto', (req, res)=>{
     res.render('partials/contact')
@@ -72,6 +74,11 @@ router.get('/robots.txt', function(req, res){
 
 
 
+
+
+
+
+
 //rutas mobil
 router.get('/', function(req, res){
     res.render('index');
@@ -100,6 +107,18 @@ router.get('/hardware/ssd', function(req, res){
 router.get('/hardware/ram', function(req, res){
     res.render('hardware/ram')
 });
+
+router.get('/hardware/disco_duro', function(req, res){
+    res.render('hardware/discos_duros')
+});
+
+
+
+
+
+
+
+
 
 
 

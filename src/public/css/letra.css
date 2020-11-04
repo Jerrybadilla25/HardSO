@@ -17,6 +17,12 @@
     color: rgb(10, 10, 10);
 }
 
+.l-black-n{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(10, 10, 10);
+    font-size: 0.6em;
+}
+
 .l-white{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(252, 252, 252);
@@ -30,5 +36,10 @@
 .l-red{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(235, 61, 61);
+}
+
+em{
+    color: rgb(13, 13, 235);
+    
 }
 
