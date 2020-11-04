@@ -7,12 +7,12 @@ require('dotenv').config();
 
 
 // nodemailer
-router.get('/contacto', (req, res)=>{
+router.get('/politica/contacto', (req, res)=>{
     res.render('partials/contact')
 });
 
 
-router.post('/contacto', (req, res)=>{
+router.post('/politica/contacto', (req, res)=>{
     const { name, email, titulo, text} = req.body;
     contentHTML = `
         <h1>Informacion de usuario</h1>
