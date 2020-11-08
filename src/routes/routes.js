@@ -96,6 +96,10 @@ router.get('/mobil/hardware/smartGM', function(req, res){
 
 //ruta windows
 
+router.get('/windows/sofware/crear_usuario_invitado_windows', (req, res)=>{
+    res.render('windows/sofware/user-invitado')
+});
+
 //rutas linux
 
 //hardware

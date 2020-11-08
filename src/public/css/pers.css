@@ -85,6 +85,23 @@ iframe{
     margin-top: 15px;
 }
 
+.box-trasp{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    height: auto;
+    color: black;
+    margin-top: 0px; 
+}
+
+.box-tur{
+    padding-bottom: 3%;
+    padding-top: 3%;
+    height: auto;
+    color: black;
+    background-color:  #d9d8da;
+    margin-top: 15px; 
+}
+
 div p {
     padding-left: 7%;
     padding-right: 7%;
@@ -172,6 +189,13 @@ ul li{
 
 .border-t-white{
     border-top: 7px solid #5e4472;
+}
+
+.border-b-tur{
+    
+    border-bottom: 3px solid #5e4472;
+    
+   
 }
 
 .sombra{

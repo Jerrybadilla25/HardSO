@@ -12,6 +12,13 @@
     color: rgb(235, 61, 61);
 }
 
+.l-red-n{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(235, 61, 61);
+    font-weight: bold;
+}
+
+
 .l-black{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(10, 10, 10);
@@ -20,7 +27,7 @@
 .l-black-n{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(10, 10, 10);
-    font-size: 0.6em;
+    font-weight: bold;
 }
 
 .l-white{
@@ -36,6 +43,17 @@
 .l-red{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(235, 61, 61);
+}
+
+.l-blue{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(27, 4, 230);
+}
+
+.l-blue-n{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(27, 4, 230);
+    font-weight: bold;
 }
 
 em{
