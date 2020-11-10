@@ -4,6 +4,18 @@
     margin: auto;
 }
 
+.foto-logo{
+    width: 10%; 
+}
+
+@media only screen and (max-width: 800px){
+    .foto-logo{
+        width: 25%;
+      
+        
+    }
+}
+
 
 .foto-respon-40{
     width: 60%;

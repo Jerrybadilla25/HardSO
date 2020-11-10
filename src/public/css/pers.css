@@ -43,7 +43,7 @@
 }
 
 strong{
-    color: #202028;
+    color: #0c0c0c;
 }
 
 
@@ -184,7 +184,7 @@ ul li{
 }
 
 .border-b-white{
-    border-bottom: 1.5px solid #5e4472;
+    border-bottom: 2px solid #5e4472;
 }
 
 .border-t-white{

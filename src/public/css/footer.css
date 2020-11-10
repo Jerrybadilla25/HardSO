@@ -20,6 +20,19 @@
   background-color: #0b0813;
 }
 
+.border-y{
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: 1px solid #5e4472;
+  border-bottom: 1px solid #5e4472;
+ 
+ 
+}
+
+
+
 .border-verde{
     border-top: 3px solid #00ff00;
 }
@@ -66,6 +79,23 @@
   background-image: url(/img2/cyber-3400789_1920.jpg);
   
 }
+
+@media only screen and (max-width: 800px){
+  .logo-bkg-black{
+    height: 110px;
+    background-image: url(/img2/cyber-3400789_1920.jpg);
+  }
+  .sombra{
+    -webkit-box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
+     box-shadow: 13px 17px 5px -1px rgba(0,0,0,0.75);
+    }
+}
+
+.foto-logo-footer{
+  width: 20%;
+}
+
 
 .icon-f{
   width: 50px;
