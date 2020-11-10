@@ -6,11 +6,13 @@
 
 .foto-logo{
     width: 10%; 
+    padding-top: 1%;
 }
 
 @media only screen and (max-width: 800px){
     .foto-logo{
         width: 25%;
+        padding-top: 1%;
       
         
     }
