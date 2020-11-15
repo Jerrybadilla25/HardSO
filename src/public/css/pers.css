@@ -33,7 +33,7 @@
     
 }
 
-.logo-recuadro{
+.border-x{
     border-left: 3px solid #00ff00;
     border-right: 3px solid #00ff00;
     padding-left: 20px;
@@ -41,6 +41,25 @@
     margin-top: 5%;
     
 }
+
+.border-y{
+    border-top: 1px solid #050505;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5%;
+    
+}
+
+.border-b{
+    border-bottom: 1px solid #050505;  
+}
+
+.border-t{
+    border-top: 1px solid #050505;  
+}
+
+
 
 strong{
     color: #0c0c0c;
@@ -101,6 +120,7 @@ iframe{
     background-color:  #d9d8da;
     margin-top: 15px; 
 }
+
 
 div p {
     padding-left: 7%;

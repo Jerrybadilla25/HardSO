@@ -3,6 +3,7 @@ const router = express.Router();
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
+const Comentario = require('../modal/comentario');
 
 
 
@@ -73,7 +74,13 @@ router.get('/robots.txt', function(req, res){
 });
 
 
-
+// delete comentarios
+router.get('/delete/:id/:idComentario' , async(req, res)=>{
+    const comentario = await Comentario.findById(req.params.idComentario);
+    comentario.comentarios.pull(req.params.id);
+    await Comentario.updateOne({_id:req.params.idComentario},comentario);
+    res.redirect('/politica/ruta/add');
+  });
 
 
 
@@ -81,40 +88,74 @@ router.get('/robots.txt', function(req, res){
 
 //rutas mobil
 router.get('/', function(req, res){
-    res.render('index');
+    const page = "/";
+    res.render('index',{
+        page
+    });
 });
 
-router.get('/mobil/sofware/mapme', function(req, res){
-    res.render('mobil/sofware/mapme')
+router.get('/mobil/sofware/mapme',async function(req, res){
+    const id = "5fae21b8263bcb30c414e3aa";
+    const page = "/mobil/sofware/mapme";
+    const coment = await Comentario.findById(id);
+    res.render('mobil/sofware/mapme',{
+        page, coment, id
+    })
 });
 
-router.get('/mobil/hardware/smartGM', function(req, res){
-    res.render('mobil/hardware/smartGM')
+router.get('/mobil/hardware/smartGM', async function(req, res){
+    const id = "5fae2223063aa71df8c93d41";
+    const page = "/mobil/hardware/smartGM";
+    const coment = await Comentario.findById(id);
+    res.render('mobil/hardware/smartGM',{
+        page, coment, id
+    })
 });
 
 
 
 //ruta windows
 
-router.get('/windows/sofware/crear_usuario_invitado_windows', (req, res)=>{
-    res.render('windows/sofware/user-invitado')
+router.get('/windows/sofware/crear_usuario_invitado_windows', async(req, res)=>{
+    const id = "5fae2260edc9b80db8d3e6f5";
+    const page = "/windows/sofware/crear_usuario_invitado_windows";
+    const coment = await Comentario.findById(id);
+    res.render('windows/sofware/user-invitado',{
+        page, coment, id
+    })
 });
 
 //rutas linux
 
 //hardware
 
-router.get('/hardware/ssd', function(req, res){
-    res.render('hardware/ssd')
+router.get('/hardware/ssd', async function(req, res){
+    const id = "5fae2193c98f263aa4e090f8";
+    const page = "/hardware/ssd";
+    const coment = await Comentario.findById(id);
+    res.render('hardware/ssd',{
+        page, coment, id
+    })
 });
 
-router.get('/hardware/ram', function(req, res){
-    res.render('hardware/ram')
+router.get('/hardware/ram', async function(req, res){
+    const id = "5fae1f9a9a3b0e06907b73d6";
+    const page = "/hardware/ram";
+    const coment = await Comentario.findById(id);
+    res.render('hardware/ram',{
+        page, coment, id
+    })
 });
 
-router.get('/hardware/disco_duro', function(req, res){
-    res.render('hardware/discos_duros')
+router.get('/hardware/disco_duro', async function(req, res){
+    const id = "5fae21f1061c4018d006cfde";
+    const page = "/hardware/disco_duro";
+    const coment = await Comentario.findById(id);
+    res.render('hardware/discos_duros',{
+        page, coment, id
+    })
 });
+
 
 
 
@@ -130,6 +171,19 @@ router.get('/hardware/disco_duro', function(req, res){
 router.get('/politica/politica', function(req, res){
     res.render('politica/politica')
 });
+
+//pintar las rutas en rutas
+/*router.get('/politica/ruta/add', async function(req, res){
+    const task = await Comentario.find();
+    res.render('addrutaComen',{
+        task
+    })
+});*/
+
+router.get('/*', function(req,res){
+    res.render('notfound')
+});
+
 
 
 
