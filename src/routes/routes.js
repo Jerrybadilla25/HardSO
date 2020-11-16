@@ -173,12 +173,12 @@ router.get('/politica/politica', function(req, res){
 });
 
 //pintar las rutas en rutas
-/*router.get('/politica/ruta/add', async function(req, res){
+router.get('/politica/ruta/add', async function(req, res){
     const task = await Comentario.find();
     res.render('addrutaComen',{
         task
     })
-});*/
+});
 
 router.get('/*', function(req,res){
     res.render('notfound')

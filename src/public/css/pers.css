@@ -59,11 +59,13 @@
     border-top: 1px solid #050505;  
 }
 
-
-
-strong{
-    color: #0c0c0c;
+.border-b-green{
+    border-bottom: 1px solid #6da131;  
 }
+
+
+
+
 
 
 .box-anu{
