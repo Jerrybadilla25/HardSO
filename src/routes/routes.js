@@ -125,7 +125,46 @@ router.get('/windows/sofware/crear_usuario_invitado_windows', async(req, res)=>{
     })
 });
 
+router.get('/windows/sofware/one_drive', async(req, res)=>{
+    const id = "5fb41481e9bf3b0fb4a31f3e";
+    const page = "/windows/sofware/one_drive";
+    const coment = await Comentario.findById(id);
+    res.render('windows/sofware/onedrive',{
+        page, coment, id
+    })
+});
+
+router.get('/windows/sofware/one_drive_android', async(req, res)=>{
+    const id = "5fb41481e9bf3b0fb4a31f3e";
+    const page = "/windows/sofware/one_drive_android";
+    const coment = await Comentario.findById(id);
+    res.render('windows/sofware/onedriveAnd',{
+        page, coment, id
+    })
+});
+
+router.get('/windows/sofware/one_drive_win10', async(req, res)=>{
+    const id = "5fb41481e9bf3b0fb4a31f3e";
+    const page = "/windows/sofware/one_drive_win10";
+    const coment = await Comentario.findById(id);
+    res.render('windows/sofware/onedriveWin10',{
+        page, coment, id
+    })
+});
+
+
+
+
 //rutas linux
+
+
+
+
+
+
+
+
+
 
 //hardware
 
@@ -173,13 +212,13 @@ router.get('/politica/politica', function(req, res){
 });
 
 //pintar las rutas en rutas
-router.get('/politica/ruta/add', async function(req, res){
+/*router.get('/politica/ruta/add', async function(req, res){
     const task = await Comentario.find();
     res.render('addrutaComen',{
         task
     })
 });
-
+*/
 router.get('/*', function(req,res){
     res.render('notfound')
 });

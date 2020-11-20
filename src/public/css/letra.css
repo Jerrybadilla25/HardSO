@@ -40,6 +40,8 @@
     color: rgb(48, 168, 24);
 }
 
+
+
 .l-red{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(235, 61, 61);
@@ -68,4 +70,8 @@ em{
 }
 .cursive{
     font-family: cursive;
+}
+
+.size-p{
+    font-size: 1.25em;
 }
