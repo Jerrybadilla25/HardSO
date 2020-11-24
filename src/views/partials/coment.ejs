@@ -1,4 +1,4 @@
-
+<!--
 <div class="row my-5 box-trasp">
   
 
@@ -71,4 +71,71 @@
   
     
    
+</div>
+
+-->
+
+
+<div class="row">
+  <div class="container my-3">
+    <h3>Dejanos tus comentarios.</h3>
+  </div>
+
+  <!--comentarios-->
+  <div class="col-md-12 ">
+  <% for( let i = 0; i < coment.comentarios.length; i++ ) { %>
+  <div class="col-md-12">
+    <div class="row my-3 pb-0">
+      
+      <div class="col-3 back-name">
+          <p class="size-p "> 
+            <strong><%= coment.comentarios[i].nombre %></strong>  </p>
+      </div>
+
+      <div class="col-8 pl-0 ml-3 back-comen ">
+        <p class="">
+         <em>Comentario:</em> <%= coment.comentarios[i].comentario %>
+        </p>
+       
+      </div>
+      <div class="col-12 pl-0 ">
+         <p class="cursive texto-1 pb-0 l-blue">Fecha Comentario: <i class=" l-green"><%= coment.comentarios[i].fecha %></i></p> 
+      </div>
+    </div>
+  </div>
+  <% } %>
+  </div>
+
+
+
+
+  <!--Formuario comentarios-->
+  <div class="col-md-8 col-sm-12 mx-auto mt-5 box-white">
+    <form action="<%= page %>" method="POST" >
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre</label>
+          <input type="text" name="nombre"  class="form-control"  placeholder="digita tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email</label>
+          <input type="email" name="email"  class="form-control"  placeholder="digita tu direccion de correo">
+        </div>
+    
+    
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Comentario</label>
+          <textarea class="form-control" name="comentario"  rows="3"></textarea>
+        </div>
+        <div class="form-group" style="display: none;">
+          <label for="exampleFormControlInput1">id</label>
+          <input type="text" name="idComen"  class="form-control"  value="<%= id %> ">
+        </div>
+        <div>
+         
+            <button type="submit" class="btn btn-primary mb-2">Comentar</button>
+        </div>
+      </form>
+
+</div>
+  
 </div>

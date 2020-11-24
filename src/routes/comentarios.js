@@ -7,13 +7,13 @@ const Comentario = require('../modal/comentario');
 
 
 
-/*
+
 router.post('/politica/add/ruta', async(req, res)=>{
     const task= new Comentario(req.body);
     await task.save();
     res.redirect('/politica/ruta/add');
 });
-*/
+
 
 router.post('/hardware/ssd', async function(req, res){
     const id = "5fae2193c98f263aa4e090f8";
@@ -86,6 +86,15 @@ router.post('/windows/sofware/one_drive_win10', async function(req, res){
     task.comentarios.push(data);
     await task.save();
     res.redirect('/windows/sofware/one_drive_win10');
+});
+
+router.post('/mobil/sofware/mega', async function(req, res){
+    const id = "5fb86c24f7e50b3c1cc7a59c";
+    const data = req.body;
+    const task = await Comentario.findById(id);
+    task.comentarios.push(data);
+    await task.save();
+    res.redirect('/mobil/sofware/mega');
 });
 
 

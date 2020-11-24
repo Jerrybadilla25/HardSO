@@ -112,6 +112,15 @@ router.get('/mobil/hardware/smartGM', async function(req, res){
     })
 });
 
+router.get('/mobil/sofware/mega', async function(req, res){
+    const id = "5fb86c24f7e50b3c1cc7a59c";
+    const page = "/mobil/sofware/mega";
+    const coment = await Comentario.findById(id);
+    res.render('mobil/sofware/mega',{
+        page, coment, id
+    })
+});
+
 
 
 //ruta windows
@@ -212,13 +221,13 @@ router.get('/politica/politica', function(req, res){
 });
 
 //pintar las rutas en rutas
-/*router.get('/politica/ruta/add', async function(req, res){
+router.get('/politica/ruta/add', async function(req, res){
     const task = await Comentario.find();
     res.render('addrutaComen',{
         task
     })
 });
-*/
+
 router.get('/*', function(req,res){
     res.render('notfound')
 });
