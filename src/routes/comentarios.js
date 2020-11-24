@@ -8,11 +8,7 @@ const Comentario = require('../modal/comentario');
 
 
 
-router.post('/politica/add/ruta', async(req, res)=>{
-    const task= new Comentario(req.body);
-    await task.save();
-    res.redirect('/politica/ruta/add');
-});
+
 
 
 router.post('/hardware/ssd', async function(req, res){
