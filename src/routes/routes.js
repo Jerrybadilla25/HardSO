@@ -9,7 +9,8 @@ const Comentario = require('../modal/comentario');
 
 // nodemailer
 router.get('/politica/contacto', (req, res)=>{
-    res.render('partials/contact')
+    res.redirect('/');
+    //res.render('partials/contact')
 });
 
 

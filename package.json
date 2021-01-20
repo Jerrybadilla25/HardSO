@@ -4,7 +4,8 @@
   "description": "web estático",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js",
+    "start": "src/app.js",
+    "dev": "nodemon src/app.js",
     "imagemin": "imagemin imgs/* --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
